@@ -285,7 +285,8 @@ class MainActivity : Activity() {
                 if (i != null) startActivity(i) else Toast.makeText(this, "Roblox is not installed", Toast.LENGTH_SHORT).show()
             })
 
-add(how, tv("""1. Turn on the service, then open Roblox. A floating bar appears (START, PAUSE, SET, COLOR, TEST).
+        val how = card("How to use")
+        add(how, tv("""1. Turn on the service, then open Roblox. A floating bar appears (START, PAUSE, SET, COLOR, TEST).
 2. SET: tap the 8 spots it asks for (5 buttons, joystick, camera area, Shift Lock).
 3. COLOR: start fishing, the screen freezes after 8 seconds. Tap the bar corners, the green zone and the white marker.
 4. Optional: start fast capture below for about 30 checks a second.
